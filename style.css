@@ -1,0 +1,237 @@
+/* Global Settings */
+body {
+    background-color: #121212; /* Deep dark background */
+    color: #ffffff; /* Light text color */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #76ff03; /* Neon green for main heading */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem; /* Increased font size */
+    text-shadow: 0 0 8px #76ff03, 0 0 16px #76ff03; /* Glowing text effect */
+}
+
+h3 {
+    color: #76ff03;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem; /* Slightly increased font size for subheadings */
+    text-shadow: 0 0 5px #76ff03;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar/Menu */
+.menu {
+    background-color: #1f1f1f; /* Slightly lighter dark for menu */
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.menu a {
+    color: #b0bec5;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+.menu a:hover {
+    color: #76ff03; /* Bright green on hover */
+    text-shadow: 0 0 8px #76ff03;
+    border-color: #76ff03; /* Adds border underline on hover */
+}
+
+/* Rizupfellas Hover Effect */
+.rizupfellas {
+    color: #76ff03;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-shadow: 0 0 5px #76ff03;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.rizupfellas:hover {
+    animation: glitter 1.5s linear infinite;
+}
+
+/* Keyframes for Glitter Effect */
+@keyframes glitter {
+    0% {
+        text-shadow: 
+            0 0 5px #fff, 
+            0 0 10px #fff, 
+            0 0 15px #76ff03, 
+            0 0 20px #76ff03, 
+            0 0 30px #76ff03, 
+            0 0 40px #76ff03, 
+            0 0 50px #76ff03;
+    }
+    50% {
+        text-shadow: 
+            0 0 5px #fff, 
+            0 0 10px #fff, 
+            0 0 15px #76ff03, 
+            0 0 20px #76ff03, 
+            0 0 30px #76ff03, 
+            0 0 40px #76ff03, 
+            0 0 60px #64dd17;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #fff, 
+            0 0 10px #fff, 
+            0 0 15px #76ff03, 
+            0 0 20px #76ff03, 
+            0 0 30px #76ff03, 
+            0 0 40px #76ff03, 
+            0 0 50px #76ff03;
+    }
+}
+
+/* Main Buttons */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #76ff03;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #64dd17;
+    transform: scale(1.05);
+    color: #212121; /* Dark text on hover */
+}
+
+.btn-secondary {
+    color: #b0bec5;
+    background-color: transparent;
+    border: 2px solid #b0bec5;
+}
+
+.btn-secondary:hover {
+    color: #76ff03;
+    border-color: #76ff03;
+    background-color: rgba(118, 255, 3, 0.2);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #2c2c2c;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #b0bec5;
+}
+
+th {
+    background-color: #1f1f1f;
+    color: #76ff03;
+    font-weight: bold;
+    text-shadow: 0 0 5px #76ff03;
+}
+
+tr:nth-child(even) {
+    background-color: #222;
+}
+
+tr:hover {
+    background-color: rgba(118, 255, 3, 0.1);
+}
+
+/* Action Buttons (Update/Delete) */
+td a {
+    margin: 0 5px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #f44336; /* Red for delete */
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+td a:hover {
+    background-color: transparent;
+    border-color: #f44336; /* Border glow effect */
+    color: #f44336;
+}
+
+td a[href*="update"] {
+    background-color: #1e88e5; /* Blue for update */
+}
+
+td a[href*="update"]:hover {
+    background-color: transparent;
+    border-color: #1e88e5;
+    color: #1e88e5;
+}
+
+/* Messages */
+p {
+    color: #76ff03;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Links in Messages */
+p a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+p a:hover {
+    color: #76ff03;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
